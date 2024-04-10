@@ -18,6 +18,8 @@ app.get("/api/tests", async (request, response) => {
     response.send(["jgft"]);
 });
 
+const port = process.env.PORT || 3000;
+
 // начинаем прослушивать подключения на 3000 порту
-app.listen(3000);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 //https://server-497g.onrender.com
